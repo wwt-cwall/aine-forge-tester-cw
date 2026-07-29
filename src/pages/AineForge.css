@@ -1,0 +1,197 @@
+.aine-forge-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.aine-forge-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.aine-forge-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.aine-forge-tagline {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.aine-forge-section {
+  margin-bottom: 3rem;
+}
+
+.aine-forge-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.aine-forge-section p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Capabilities Grid */
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.capability-card {
+  background: linear-gradient(135deg, var(--surface-color) 0%, var(--card-bg) 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.capability-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
+}
+
+.capability-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.capability-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.capability-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Workflow Steps */
+.workflow-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.workflow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.workflow-step:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.15);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.step-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.step-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Features List */
+.features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  background: var(--surface-color);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--primary-color);
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.features-list li strong {
+  color: var(--text-color);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Highlight Section */
+.highlight-section {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 2px solid var(--primary-color);
+}
+
+.highlight-section h2 {
+  color: var(--primary-color);
+}
+
+.highlight-section p {
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .aine-forge-page {
+    padding: 1rem;
+  }
+
+  .aine-forge-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .aine-forge-tagline {
+    font-size: 1rem;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-number {
+    margin-bottom: 0.5rem;
+  }
+}

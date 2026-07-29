@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import FeatureCard from '../components/FeatureCard'
 import Counter from '../components/Counter'
@@ -61,6 +62,17 @@ function Home() {
             to add more interactive features!
           </p>
           <Counter initialValue={0} />
+        </section>
+
+        <section className="demo-section">
+          <h2>🤖 Meet AINE Forge</h2>
+          <p className="demo-description">
+            Want to learn more about the AI assistant that helps build and maintain 
+            this project? Discover what AINE Forge can do for your development workflow.
+          </p>
+          <Link to="/aine-forge" className="cta-button">
+            Learn About AINE Forge →
+          </Link>
         </section>
       </main>
     </>
