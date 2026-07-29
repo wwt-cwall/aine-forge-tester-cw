@@ -260,6 +260,39 @@ function AineForge() {
           software, faster.
         </p>
       </section>
+
+      <section className="aine-forge-section">
+        <h2>🔗 Other Assistants</h2>
+        <p>
+          Interested in exploring other agentic coding assistants? Check out these tools:
+        </p>
+        <ul className="other-assistants-list">
+          <li>
+            <a 
+              href="https://www.devin.ai/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="external-link"
+            >
+              Devin
+            </a>
+            {' '}- An AI software engineer that can autonomously plan and execute complex 
+            engineering tasks.
+          </li>
+          <li>
+            <a 
+              href="https://www.anthropic.com/claude" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="external-link"
+            >
+              Claude Code
+            </a>
+            {' '}- Anthropic's AI assistant with advanced coding capabilities and deep 
+            understanding of software development.
+          </li>
+        </ul>
+      </section>
     </div>
   )
 }
