@@ -22,6 +22,12 @@ function Navbar() {
           >
             📚 Getting Started
           </NavLink>
+          <NavLink 
+            to="/aine-forge" 
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          >
+            🤖 AINE Forge
+          </NavLink>
         </div>
       </div>
     </nav>
