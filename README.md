@@ -127,6 +127,12 @@ VITE_API_URL=http://localhost:3000
 4. Ensure linting passes: `npm run lint`
 5. Submit a pull request
 
+## 📧 Contact
+
+**Chris Wall**
+- GitHub: [@wwt-cwall](https://github.com/wwt-cwall)
+- Email: 93598748+wwt-cwall@users.noreply.github.com
+
 ## 📄 License
 
 MIT
