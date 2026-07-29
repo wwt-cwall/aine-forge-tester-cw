@@ -291,6 +291,30 @@ function AineForge() {
             {' '}- Anthropic's AI assistant with advanced coding capabilities and deep 
             understanding of software development.
           </li>
+          <li>
+            <a 
+              href="https://github.com/features/copilot" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="external-link"
+            >
+              Microsoft Copilot
+            </a>
+            {' '}- GitHub's AI pair programmer that helps you write code faster with 
+            intelligent code completions and suggestions.
+          </li>
+          <li>
+            <a 
+              href="https://www.glean.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="external-link"
+            >
+              Glean
+            </a>
+            {' '}- An AI-powered work assistant that helps teams find information and 
+            get answers across all their company's apps and data.
+          </li>
         </ul>
       </section>
     </div>
