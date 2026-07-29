@@ -20,6 +20,108 @@ function AineForge() {
         </p>
       </section>
 
+      <section className="aine-forge-section agentic-section">
+        <h2>🚀 What is an Agentic Coding Assistant?</h2>
+        <p>
+          An <strong>agentic coding assistant</strong> goes far beyond traditional code completion 
+          or suggestion tools. Unlike passive AI helpers that wait for prompts and provide snippets, 
+          agentic assistants are <em>autonomous agents</em> that can independently plan, execute, 
+          and verify complex software development tasks from start to finish.
+        </p>
+        
+        <div className="agentic-comparison">
+          <div className="comparison-column">
+            <h3>Traditional AI Assistants</h3>
+            <ul>
+              <li>Provide code suggestions</li>
+              <li>Answer specific questions</li>
+              <li>Generate code snippets</li>
+              <li>Require constant guidance</li>
+              <li>Limited context awareness</li>
+            </ul>
+          </div>
+          <div className="comparison-column highlight">
+            <h3>Agentic Assistants (AINE Forge)</h3>
+            <ul>
+              <li>Complete entire features autonomously</li>
+              <li>Plan multi-step workflows</li>
+              <li>Read and modify existing codebases</li>
+              <li>Make independent decisions</li>
+              <li>Full project context understanding</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>💼 How Agentic Assistants Improve Developer Productivity</h3>
+        <div className="productivity-benefits">
+          <div className="benefit-card">
+            <span className="benefit-icon">⚡</span>
+            <h4>Accelerated Development</h4>
+            <p>
+              Complete routine tasks in minutes instead of hours. From adding new features 
+              to writing tests, agentic assistants handle the implementation while you 
+              focus on architecture and business logic.
+            </p>
+          </div>
+          <div className="benefit-card">
+            <span className="benefit-icon">🎯</span>
+            <h4>Reduced Context Switching</h4>
+            <p>
+              Stay in your flow state. Delegate time-consuming tasks like documentation 
+              updates, boilerplate code, or refactoring to the agent while you work on 
+              high-value problems.
+            </p>
+          </div>
+          <div className="benefit-card">
+            <span className="benefit-icon">🛡️</span>
+            <h4>Consistent Quality</h4>
+            <p>
+              Maintain code quality standards automatically. Agentic assistants follow 
+              best practices, write tests, run linters, and ensure changes don't break 
+              existing functionality.
+            </p>
+          </div>
+          <div className="benefit-card">
+            <span className="benefit-icon">📖</span>
+            <h4>Knowledge Transfer</h4>
+            <p>
+              Onboard faster and learn continuously. The agent understands your codebase 
+              and can explain patterns, update documentation, and help new team members 
+              get up to speed quickly.
+            </p>
+          </div>
+          <div className="benefit-card">
+            <span className="benefit-icon">🔄</span>
+            <h4>Continuous Improvement</h4>
+            <p>
+              Keep your codebase healthy. Agentic assistants can proactively refactor 
+              technical debt, update dependencies, and modernize code without disrupting 
+              your development workflow.
+            </p>
+          </div>
+          <div className="benefit-card">
+            <span className="benefit-icon">🌙</span>
+            <h4>24/7 Availability</h4>
+            <p>
+              Work on your schedule. Assign tasks to the agent and come back to completed, 
+              tested, and documented code—whether it's during your workday or overnight.
+            </p>
+          </div>
+        </div>
+
+        <div className="productivity-stats">
+          <h4>The Bottom Line</h4>
+          <p>
+            By handling repetitive, time-consuming tasks autonomously, agentic coding 
+            assistants can help developers reclaim <strong>30-50% of their time</strong>, 
+            allowing them to focus on creative problem-solving, system design, and 
+            delivering business value. It's not about replacing developers—it's about 
+            amplifying their capabilities and eliminating the tedious work that slows 
+            them down.
+          </p>
+        </div>
+      </section>
+
       <section className="aine-forge-section">
         <h2>✨ What I Can Do</h2>
         <div className="capabilities-grid">

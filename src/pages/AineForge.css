@@ -34,11 +34,167 @@
   color: var(--text-color);
 }
 
+.aine-forge-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  color: var(--text-color);
+}
+
+.aine-forge-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
 .aine-forge-section p {
   font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 1rem;
+}
+
+/* Agentic Section Styles */
+.agentic-section {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+.agentic-section strong {
+  color: var(--primary-color);
+}
+
+.agentic-section em {
+  color: var(--accent-color);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Comparison Grid */
+.agentic-comparison {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.comparison-column {
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 2px solid var(--border-color);
+}
+
+.comparison-column.highlight {
+  border-color: var(--primary-color);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+}
+
+.comparison-column h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.comparison-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comparison-column ul li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.comparison-column ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.comparison-column.highlight ul li::before {
+  content: "✓";
+  color: var(--accent-color);
+}
+
+/* Productivity Benefits Grid */
+.productivity-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.benefit-card {
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.2);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.benefit-card h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  color: var(--text-color);
+}
+
+.benefit-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Productivity Stats */
+.productivity-stats {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.productivity-stats h4 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.productivity-stats p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.productivity-stats strong {
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
 }
 
 /* Capabilities Grid */
@@ -71,6 +227,7 @@
 .capability-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  margin-top: 0;
   color: var(--text-color);
 }
 
@@ -120,6 +277,7 @@
 .step-content h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  margin-top: 0;
   color: var(--text-color);
 }
 
@@ -179,6 +337,18 @@
 
   .aine-forge-tagline {
     font-size: 1rem;
+  }
+
+  .agentic-section {
+    padding: 1.5rem;
+  }
+
+  .agentic-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .productivity-benefits {
+    grid-template-columns: 1fr;
   }
 
   .capabilities-grid {
