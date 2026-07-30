@@ -34,6 +34,12 @@ function Navbar() {
           >
             🚀 Forge Guide
           </NavLink>
+          <NavLink 
+            to="/health" 
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          >
+            🩺 Health
+          </NavLink>
         </div>
       </div>
     </nav>
