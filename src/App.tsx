@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import AineForge from './pages/AineForge'
+import ForgeGuide from './pages/ForgeGuide'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/getting-started" element={<GettingStarted />} />
           <Route path="/aine-forge" element={<AineForge />} />
+          <Route path="/forge-guide" element={<ForgeGuide />} />
         </Routes>
 
         <footer className="footer">
