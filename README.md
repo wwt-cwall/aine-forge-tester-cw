@@ -1,3 +1,5 @@
+Hello from Forge!
+
 # Aine Forge Tester
 
 A TypeScript/React application designed as a testing ground for agentic coding tools.
