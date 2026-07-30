@@ -1,0 +1,49 @@
+.health-check {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.health-check-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.health-check-card {
+  background: var(--card-bg, #1a1a2e);
+  border: 1px solid var(--card-border, #333);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.health-check-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--card-border, #333);
+}
+
+.health-check-row:last-child {
+  border-bottom: none;
+}
+
+.health-check-label {
+  font-weight: 600;
+  color: var(--text-muted, #aaa);
+}
+
+.health-check-value {
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.health-check-status {
+  color: #4caf50;
+  font-weight: 700;
+  text-transform: uppercase;
+}
