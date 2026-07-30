@@ -7,7 +7,7 @@ function HealthCheck() {
   return (
     <main className="health-check">
       <h1 className="health-check-title">🩺 Health Check</h1>
-      <div className="health-check-card">
+      <div className="health-check-card" data-testid="health-card">
         <div className="health-check-row">
           <span className="health-check-label">Status</span>
           <span

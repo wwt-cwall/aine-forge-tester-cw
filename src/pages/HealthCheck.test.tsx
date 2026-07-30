@@ -24,6 +24,18 @@ describe('HealthCheck', () => {
     const timestamp = screen.getByTestId('health-timestamp')
     expect(timestamp.textContent).toMatch(/^\d{4}-\d{2}-\d{2}T/)
   })
+
+  it('renders the health card container', () => {
+    render(<HealthCheck />)
+    expect(screen.getByTestId('health-card')).toBeInTheDocument()
+  })
+
+  it('displays all three health fields', () => {
+    render(<HealthCheck />)
+    expect(screen.getByText('Status')).toBeInTheDocument()
+    expect(screen.getByText('Version')).toBeInTheDocument()
+    expect(screen.getByText('Timestamp')).toBeInTheDocument()
+  })
 })
 
 describe('getHealthStatus', () => {
