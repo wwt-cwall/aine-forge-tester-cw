@@ -1,0 +1,47 @@
+.theme-toggle {
+  background: transparent;
+  border: 2px solid var(--border-color);
+  padding: 0.5em;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.theme-toggle:hover {
+  background: var(--surface-color);
+  border-color: var(--primary-color);
+  transform: rotate(20deg) scale(1.1);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.theme-toggle:focus,
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.theme-toggle-icon {
+  font-size: 1.2em;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0.4em;
+  }
+  
+  .theme-toggle-icon {
+    font-size: 1em;
+  }
+}

@@ -11,6 +11,7 @@
   padding: 2rem 1rem;
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
   border-radius: 12px;
+  transition: background 0.3s ease;
 }
 
 .war1812-header h1 {
@@ -41,6 +42,7 @@
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .war1812-section h2 {
@@ -64,7 +66,7 @@
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
 }
 
 .impact-card:hover {
@@ -105,7 +107,7 @@
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
 }
 
 .consequence-item:hover {
@@ -135,6 +137,7 @@
 .war1812-conclusion {
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
   border: 2px solid var(--primary-color);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .war1812-quote {
@@ -144,9 +147,10 @@
   text-align: center;
   margin-top: 1.5rem;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--surface-color);
   border-radius: 8px;
   border-left: 4px solid var(--accent-color);
+  transition: background 0.3s ease;
 }
 
 /* Responsive */
