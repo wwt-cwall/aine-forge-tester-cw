@@ -1,5 +1,6 @@
 // Main App component
 // This is the second comment
+import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
@@ -12,10 +13,30 @@ import War1812 from './pages/War1812'
 import './App.css'
 
 function App() {
+  // Initialize theme from localStorage or default to 'dark'
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    const savedTheme = localStorage.getItem('theme')
+    return (savedTheme === 'light' || savedTheme === 'dark') ? savedTheme : 'dark'
+  })
+
+  // Apply theme to document and save to localStorage
+  useEffect(() => {
+    if (theme === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+    }
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light')
+  }
+
   return (
     <Router basename="/aine-forge-tester/">
       <div className="app">
-        <Navbar />
+        <Navbar theme={theme} onToggleTheme={toggleTheme} />
         
         <Routes>
           <Route path="/" element={<Home />} />

@@ -1,7 +1,13 @@
 import { NavLink } from 'react-router-dom'
+import ThemeToggle from './ThemeToggle'
 import './Navbar.css'
 
-function Navbar() {
+interface NavbarProps {
+  theme: 'light' | 'dark'
+  onToggleTheme: () => void
+}
+
+function Navbar({ theme, onToggleTheme }: NavbarProps) {
   return (
     <nav className="navbar">
       <div className="navbar-content">
@@ -52,6 +58,7 @@ function Navbar() {
           >
             🩺 Health
           </NavLink>
+          <ThemeToggle theme={theme} onToggle={onToggleTheme} />
         </div>
       </div>
     </nav>
