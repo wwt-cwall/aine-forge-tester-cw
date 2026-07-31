@@ -41,6 +41,12 @@ function Navbar() {
             🎮 Tic Tac Toe
           </NavLink>
           <NavLink 
+            to="/war-1812" 
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          >
+            ⚔️ War of 1812
+          </NavLink>
+          <NavLink 
             to="/health" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
           >
