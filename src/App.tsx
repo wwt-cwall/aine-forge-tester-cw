@@ -6,6 +6,8 @@ import Home from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import AineForge from './pages/AineForge'
 import ForgeGuide from './pages/ForgeGuide'
+import HealthCheck from './pages/HealthCheck'
+import TicTacToe from './pages/TicTacToe'
 import './App.css'
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <Route path="/getting-started" element={<GettingStarted />} />
           <Route path="/aine-forge" element={<AineForge />} />
           <Route path="/forge-guide" element={<ForgeGuide />} />
+          <Route path="/health" element={<HealthCheck />} />
+          <Route path="/tic-tac-toe" element={<TicTacToe />} />
         </Routes>
 
         <footer className="footer">

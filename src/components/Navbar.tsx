@@ -34,6 +34,18 @@ function Navbar() {
           >
             🚀 Forge Guide
           </NavLink>
+          <NavLink 
+            to="/tic-tac-toe" 
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          >
+            🎮 Tic Tac Toe
+          </NavLink>
+          <NavLink 
+            to="/health" 
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          >
+            🩺 Health
+          </NavLink>
         </div>
       </div>
     </nav>
