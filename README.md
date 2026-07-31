@@ -16,6 +16,12 @@ This repository is set up as a foundation for testing agentic coding tools. It i
 - **GitHub Actions** - CI pipeline with automated testing and deployment
 - **GitHub Pages** - Automatic deployment on push to main
 
+## 😄 Developer Humor
+
+> Why do programmers prefer dark mode?
+> 
+> Because light attracts bugs! 🐛
+
 ## 🛠️ Getting Started
 
 ### Prerequisites
