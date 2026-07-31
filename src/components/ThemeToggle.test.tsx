@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect, vi } from 'vitest'
-import userEvent from '@testing-library/user-event'
 import ThemeToggle from './ThemeToggle'
 
 describe('ThemeToggle', () => {
@@ -22,13 +21,12 @@ describe('ThemeToggle', () => {
     expect(button).toHaveTextContent('🌙')
   })
 
-  it('calls onToggle when clicked', async () => {
-    const user = userEvent.setup()
+  it('calls onToggle when clicked', () => {
     const mockToggle = vi.fn()
     render(<ThemeToggle theme="dark" onToggle={mockToggle} />)
     
     const button = screen.getByRole('button')
-    await user.click(button)
+    fireEvent.click(button)
     
     expect(mockToggle).toHaveBeenCalledTimes(1)
   })
