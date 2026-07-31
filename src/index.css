@@ -1,5 +1,5 @@
 :root {
-  /* Fun, vibrant color palette */
+  /* Fun, vibrant color palette - Dark Mode */
   --primary-color: #6366f1;      /* Indigo */
   --primary-hover: #4f46e5;
   --secondary-color: #ec4899;    /* Pink */
@@ -8,18 +8,49 @@
   --warning-color: #f59e0b;      /* Amber */
   --error-color: #ef4444;        /* Red */
   
-  /* Background colors - lighter, more inviting */
+  /* Background colors - Dark Mode */
   --background-color: #1e1b4b;   /* Deep indigo */
   --surface-color: #312e81;      /* Indigo surface */
   --card-bg: #3730a3;            /* Card background */
   --navbar-bg: #1e1b4b;          /* Navbar background */
   
-  /* Text colors */
+  /* Text colors - Dark Mode */
   --text-color: #f8fafc;         /* Bright white */
   --text-muted: #c7d2fe;         /* Light indigo */
   
-  /* Border */
+  /* Border - Dark Mode */
   --border-color: rgba(139, 92, 246, 0.3);  /* Purple tint */
+  
+  /* Gradient - Dark Mode */
+  --background-gradient: linear-gradient(135deg, var(--background-color) 0%, #0f172a 100%);
+}
+
+/* Light Mode Theme */
+[data-theme="light"] {
+  /* Primary colors remain vibrant */
+  --primary-color: #4f46e5;      /* Slightly darker indigo for contrast */
+  --primary-hover: #4338ca;
+  --secondary-color: #db2777;    /* Slightly darker pink */
+  --accent-color: #7c3aed;       /* Slightly darker purple */
+  --success-color: #059669;      /* Darker emerald */
+  --warning-color: #d97706;      /* Darker amber */
+  --error-color: #dc2626;        /* Darker red */
+  
+  /* Background colors - Light Mode */
+  --background-color: #f8fafc;   /* Very light gray */
+  --surface-color: #ffffff;      /* Pure white */
+  --card-bg: #ffffff;            /* White cards */
+  --navbar-bg: #ffffff;          /* White navbar */
+  
+  /* Text colors - Light Mode */
+  --text-color: #0f172a;         /* Dark slate */
+  --text-muted: #475569;         /* Medium slate */
+  
+  /* Border - Light Mode */
+  --border-color: rgba(99, 102, 241, 0.2);  /* Light indigo tint */
+  
+  /* Gradient - Light Mode */
+  --background-gradient: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
 }
 
 * {
@@ -33,10 +64,11 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: var(--text-color);
-  background: linear-gradient(135deg, var(--background-color) 0%, #0f172a 100%);
+  background: var(--background-gradient);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 #root {
