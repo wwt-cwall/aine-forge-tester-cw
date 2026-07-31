@@ -1,0 +1,399 @@
+.snakes-usa-page {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.snakes-usa-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.snakes-usa-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #2d5016 0%, #3d6b1f 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.snakes-usa-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.snakes-usa-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Snake Safety Section */
+.snake-safety {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.snake-safety h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.safety-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.safety-tip {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.safety-tip:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.safety-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.safety-tip h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffd700;
+}
+
+.safety-tip p {
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+/* Snake Sections */
+.snake-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.venomous-section {
+  background: linear-gradient(135deg, #5a1a1a 0%, #7a2828 100%);
+}
+
+.non-venomous-section {
+  background: linear-gradient(135deg, #1a5a3a 0%, #287a52 100%);
+}
+
+.snake-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+/* Snake Grid */
+.snake-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.snake-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.snake-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.venomous-card {
+  border-color: rgba(255, 100, 100, 0.3);
+}
+
+.venomous-card:hover {
+  border-color: rgba(255, 100, 100, 0.6);
+  background: rgba(255, 100, 100, 0.15);
+}
+
+.non-venomous-card {
+  border-color: rgba(100, 255, 150, 0.3);
+}
+
+.non-venomous-card:hover {
+  border-color: rgba(100, 255, 150, 0.6);
+  background: rgba(100, 255, 150, 0.15);
+}
+
+.snake-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.snake-header h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0;
+  flex: 1;
+}
+
+.venomous-badge {
+  background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.3);
+}
+
+.non-venomous-badge {
+  background: linear-gradient(135deg, #44ff88 0%, #00cc44 100%);
+  color: #1a1a2e;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 255, 100, 0.3);
+}
+
+.scientific-name {
+  font-style: italic;
+  color: #b0b0b0;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.snake-description {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.snake-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.detail-item {
+  color: #d0d0d0;
+  font-size: 0.9rem;
+}
+
+.detail-item strong {
+  color: #ffd700;
+  margin-right: 0.5rem;
+}
+
+/* Facts Section */
+.snake-facts {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #3a1a5a 0%, #5a287a 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.snake-facts h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.fact-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(138, 43, 226, 0.3);
+}
+
+.fact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.4);
+  border-color: rgba(138, 43, 226, 0.6);
+}
+
+.fact-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #ffd700;
+}
+
+.fact-card p {
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Conservation Section */
+.conservation-note {
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a4d2e 0%, #2d7a4f 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.conservation-note h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.conservation-note p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .snakes-usa-header h1 {
+    font-size: 2rem;
+  }
+
+  .snakes-usa-intro {
+    font-size: 1rem;
+  }
+
+  .snake-section h2,
+  .snake-facts h2,
+  .conservation-note h2 {
+    font-size: 1.5rem;
+  }
+
+  .snake-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .safety-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .snake-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .venomous-badge,
+  .non-venomous-badge {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .snakes-usa-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .snakes-usa-header,
+  .snake-safety,
+  .snake-section,
+  .snake-facts,
+  .conservation-note {
+    padding: 1.5rem 1rem;
+  }
+
+  .snakes-usa-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .snake-card {
+    padding: 1rem;
+  }
+
+  .snake-header h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Light theme support */
+[data-theme="light"] .snakes-usa-page {
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+}
+
+[data-theme="light"] .snakes-usa-header {
+  background: linear-gradient(135deg, #4a7c59 0%, #5d9b6d 100%);
+}
+
+[data-theme="light"] .snake-safety {
+  background: linear-gradient(135deg, #3b5998 0%, #4c6fb1 100%);
+}
+
+[data-theme="light"] .venomous-section {
+  background: linear-gradient(135deg, #8b3a3a 0%, #a84848 100%);
+}
+
+[data-theme="light"] .non-venomous-section {
+  background: linear-gradient(135deg, #2d7a4f 0%, #3d9a63 100%);
+}
+
+[data-theme="light"] .snake-facts {
+  background: linear-gradient(135deg, #5a3a7a 0%, #7a4a9a 100%);
+}
+
+[data-theme="light"] .conservation-note {
+  background: linear-gradient(135deg, #2d6a4f 0%, #3d8a63 100%);
+}
+
+[data-theme="light"] .snake-card {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="light"] .safety-tip,
+[data-theme="light"] .fact-card {
+  background: rgba(255, 255, 255, 0.2);
+}
