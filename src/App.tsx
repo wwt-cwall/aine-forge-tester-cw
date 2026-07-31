@@ -10,6 +10,7 @@ import ForgeGuide from './pages/ForgeGuide'
 import HealthCheck from './pages/HealthCheck'
 import TicTacToe from './pages/TicTacToe'
 import War1812 from './pages/War1812'
+import SnakesUSA from './pages/SnakesUSA'
 import './App.css'
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/health" element={<HealthCheck />} />
           <Route path="/tic-tac-toe" element={<TicTacToe />} />
           <Route path="/war-1812" element={<War1812 />} />
+          <Route path="/snakes-usa" element={<SnakesUSA />} />
         </Routes>
 
         <footer className="footer">

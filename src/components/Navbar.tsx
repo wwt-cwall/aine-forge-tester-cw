@@ -53,6 +53,12 @@ function Navbar({ theme, onToggleTheme }: NavbarProps) {
             ⚔️ War of 1812
           </NavLink>
           <NavLink 
+            to="/snakes-usa" 
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          >
+            🐍 US Snakes
+          </NavLink>
+          <NavLink 
             to="/health" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
           >
