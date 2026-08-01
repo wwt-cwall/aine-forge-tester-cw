@@ -22,6 +22,10 @@ This repository is set up as a foundation for testing agentic coding tools. It i
 > 
 > Because light attracts bugs! 🐛
 
+> How many programmers does it take to change a light bulb?
+> 
+> None. It's a hardware problem! 💡
+
 ## 🛠️ Getting Started
 
 ### Prerequisites
