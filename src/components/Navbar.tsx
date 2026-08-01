@@ -59,6 +59,12 @@ function Navbar({ theme, onToggleTheme }: NavbarProps) {
             🐍 US Snakes
           </NavLink>
           <NavLink 
+            to="/forge-help" 
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+          >
+            ❓ Forge Help
+          </NavLink>
+          <NavLink 
             to="/health" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
           >
