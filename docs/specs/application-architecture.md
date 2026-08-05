@@ -68,7 +68,8 @@ aine-forge-tester/
 ### Application Root
 `src/App.tsx` defines the application structure:
 - Configures `BrowserRouter` with basename `/aine-forge-tester/`
-- Renders `<Navbar />` component
+- Manages theme state (light/dark mode) with localStorage persistence
+- Renders `<Navbar />` component with theme toggle
 - Defines routes using React Router's `<Routes>` and `<Route>`
 - Includes footer with project tagline
 
@@ -82,6 +83,10 @@ The application uses React Router v7 with the following routes:
 | `/getting-started` | `GettingStarted` | Onboarding and test scenarios |
 | `/aine-forge` | `AineForge` | Information about agentic coding |
 | `/forge-guide` | `ForgeGuide` | User guide for Forge |
+| `/health` | `HealthCheck` | Application health status page |
+| `/tic-tac-toe` | `TicTacToe` | Interactive tic-tac-toe game |
+| `/war-1812` | `War1812` | Educational content about War of 1812 |
+| `/snakes-usa` | `SnakesUSA` | Information about US snake species |
 
 ### Base Path Configuration
 The application is deployed to GitHub Pages at `/aine-forge-tester/`:
@@ -146,7 +151,19 @@ npm run test:coverage # Run tests with coverage report
 The application uses React's built-in state management:
 - **useState** - Local component state
 - **Props** - Data flow from parent to child
+- **useEffect** - Side effects (theme application, computer AI moves)
+- **localStorage** - Theme preference persistence
 - No global state management library (Redux, Zustand, etc.)
+
+### Theme Management
+App-level theme state is managed in `App.tsx`:
+- Theme stored as `'light' | 'dark'`
+- Persisted to localStorage
+- Applied via `data-theme` attribute on document root
+- Passed to Navbar via props
+- Default is dark mode
+
+See [Theme Toggle](features/theme-toggle.md) for implementation details.
 
 This simple approach is appropriate for the application's current scope.
 

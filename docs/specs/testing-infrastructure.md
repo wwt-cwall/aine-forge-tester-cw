@@ -168,10 +168,18 @@ Tests for the Header component covering:
 **Test count:** 3 tests (inferred from component simplicity)
 **Coverage:** All component functionality
 
+### Components with Tests
+- `Counter.tsx` - Full test coverage (6 tests)
+- `FeatureCard.tsx` - Full test coverage
+- `Header.tsx` - Full test coverage
+- `ThemeToggle.tsx` - Full test coverage
+- `TicTacToe.tsx` - Full test coverage including AI logic
+- `HealthCheck.tsx` - Full test coverage
+
 ### Untested Components
 The following components currently lack test files:
 - `Navbar.tsx` - Navigation component
-- All page components (`Home.tsx`, `GettingStarted.tsx`, `AineForge.tsx`, `ForgeGuide.tsx`)
+- Page components: `Home.tsx`, `GettingStarted.tsx`, `AineForge.tsx`, `ForgeGuide.tsx`, `War1812.tsx`, `SnakesUSA.tsx`
 
 These are candidates for future test coverage.
 
