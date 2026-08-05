@@ -82,18 +82,43 @@ Page header component with title and optional subtitle.
 - Consistent styling across pages
 
 #### Navbar
-Navigation bar with links to all pages.
+Navigation bar with links to all pages and theme toggle.
+
+**Props:**
+- `theme: 'light' | 'dark'` - Current theme
+- `onToggleTheme: () => void` - Theme toggle callback
 
 **Features:**
 - Brand section with logo emoji and title
 - Navigation links using React Router's `NavLink`
 - Active state styling for current page
+- Theme toggle button
 - Responsive design for mobile and desktop
 
 **Implementation:**
 - Uses `NavLink` with `isActive` callback for styling
-- Links to all four routes: Home, Getting Started, AINE Forge, Forge Guide
+- Links to all eight routes: Home, Getting Started, AINE Forge, Forge Guide, Tic Tac Toe, War of 1812, US Snakes, Health
 - Emoji icons for visual identification
+- Integrates ThemeToggle component
+
+#### ThemeToggle
+Button for switching between light and dark themes.
+
+**Props:**
+- `theme: 'light' | 'dark'` - Current theme
+- `onToggle: () => void` - Toggle callback
+
+**Features:**
+- Displays sun (☀️) icon in dark mode, moon (🌙) in light mode
+- Icon represents the theme user will switch TO
+- Accessible with aria-label and title
+- Keyboard accessible button
+
+**Implementation:**
+- Controlled component receiving theme state from parent
+- Calls onToggle callback when clicked
+- Theme state managed in App.tsx
+- Theme persisted to localStorage
 
 ### Page Components (`src/pages/`)
 Route-level components that represent full pages.
@@ -157,6 +182,85 @@ Comprehensive user guide for working with Forge.
 - Good vs bad example comparisons
 - Numbered workflow steps
 - Communication style guidance
+
+#### HealthCheck
+Simple health status page displaying application metadata.
+
+**Features:**
+- Displays status (always "ok")
+- Shows version number (0.1.0)
+- Shows current timestamp in ISO format
+- Clean card layout with label-value pairs
+
+**Implementation:**
+- Uses `getHealthStatus()` utility function from `healthCheck.ts`
+- Timestamp generated fresh on each render
+- Test IDs for all values
+
+#### TicTacToe
+Interactive tic-tac-toe game with two modes.
+
+**State:**
+- `board: Board` - 3x3 grid of cells (X, O, or null)
+- `currentPlayer: Player` - Current player ('X' or 'O')
+- `gameMode: GameMode` - 'pvp' or 'pvc'
+- `isComputerThinking: boolean` - Computer move in progress
+
+**Features:**
+- Player vs Player mode
+- Player vs Computer mode with minimax AI
+- Win detection for all 8 possible lines
+- Draw detection
+- Game reset functionality
+- Status messages for game state
+- 500ms delay for computer moves (UX)
+
+**Implementation:**
+- Minimax algorithm for optimal computer play
+- useEffect hook triggers computer moves
+- Unbeatable AI opponent
+- Full test coverage
+
+#### War1812
+Educational page about War of 1812 repercussions.
+
+**Content:**
+- Overview of the war
+- Impact on United States (4 sections)
+- Impact on Canada (2 sections)
+- Impact on Native Americans (3 sections, marked as negative)
+- International repercussions (3 sections)
+- Long-term consequences (4 items in grid)
+- Conclusion with quote
+
+**Features:**
+- Card-based layout for impacts
+- Special styling for negative impacts
+- Grid layout for consequences
+- Educational, balanced perspective
+- Multiple stakeholder viewpoints
+
+#### SnakesUSA
+Educational resource about US snake species.
+
+**Data:**
+- 8 venomous snake species
+- 15 non-venomous snake species
+- Each with name, scientific name, regions, size, description
+
+**Features:**
+- Safety tips section (4 tips)
+- Venomous snakes section with red badges
+- Non-venomous snakes section with green badges
+- Interesting facts section (6 facts)
+- Conservation message
+- Grid layouts for cards
+
+**Implementation:**
+- Static data arrays in component
+- Color-coded badges for venomous status
+- Comprehensive species information
+- Educational focus
 
 ## Component Patterns
 
