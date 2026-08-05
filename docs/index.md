@@ -19,13 +19,21 @@ High-level documentation of major subsystems and capabilities:
 
 Detailed specifications for individual features:
 
+### Navigation & UI Components
 - [Navigation](specs/features/navigation.md) - Navbar and routing between pages
+- [Theme Toggle](specs/features/theme-toggle.md) - Light/dark mode switcher
 - [Counter Component](specs/features/counter.md) - Interactive counter with increment/decrement
 - [Feature Cards](specs/features/feature-cards.md) - Display cards for showcasing features
+
+### Pages
 - [Home Page](specs/features/home-page.md) - Landing page with features and demos
 - [Getting Started Page](specs/features/getting-started-page.md) - Onboarding and test scenarios
 - [AINE Forge Page](specs/features/aine-forge-page.md) - Information about agentic coding assistants
 - [Forge Guide Page](specs/features/forge-guide-page.md) - User guide for working with Forge
+- [Health Check Page](specs/features/health-check.md) - Application health status display
+- [Tic Tac Toe Game](specs/features/tic-tac-toe.md) - Interactive game with AI opponent
+- [War of 1812 Page](specs/features/war-1812.md) - Educational content about historical impacts
+- [Snakes USA Page](specs/features/snakes-usa.md) - Information about indigenous US snake species
 
 ## Quick Links
 

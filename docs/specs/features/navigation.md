@@ -8,8 +8,17 @@ The navigation system provides consistent site-wide navigation through a navbar 
 
 ## Implementation
 
-### Component
-`src/components/Navbar.tsx`
+### Components
+- `src/components/Navbar.tsx` - Main navigation component
+- `src/components/ThemeToggle.tsx` - Theme switcher button
+
+### Props
+```tsx
+interface NavbarProps {
+  theme: 'light' | 'dark'
+  onToggleTheme: () => void
+}
+```
 
 ### Routing Integration
 Uses React Router v7's `NavLink` component for navigation with automatic active state management.
@@ -22,16 +31,23 @@ The navbar consists of two sections:
 2. **Links section** (right) - Navigation links to all pages
 
 ### Navigation Links
-Four links displayed in order:
+Eight links displayed in order:
 1. 🏠 Home - `/`
 2. 📚 Getting Started - `/getting-started`
 3. 🤖 AINE Forge - `/aine-forge`
 4. 🚀 Forge Guide - `/forge-guide`
+5. 🎮 Tic Tac Toe - `/tic-tac-toe`
+6. ⚔️ War of 1812 - `/war-1812`
+7. 🐍 US Snakes - `/snakes-usa`
+8. 🩺 Health - `/health`
 
 Each link includes:
 - Emoji icon for visual identification
 - Text label
 - Active state styling when on that page
+
+### Theme Toggle
+The navbar also includes a theme toggle button that allows users to switch between light and dark modes. See [Theme Toggle](theme-toggle.md) for details.
 
 ## Behavior
 
