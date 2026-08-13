@@ -1,4 +1,6 @@
+// Changed by Forge v0.1.0
 import { useState } from 'react'
+import { formatDuration } from '../lib/formatDuration'
 import './Counter.css'
 
 interface CounterProps {
@@ -19,6 +21,9 @@ function Counter({ initialValue = 0, step = 1 }: CounterProps) {
         <span className="counter-value" data-testid="counter-value">
           {count}
         </span>
+        <div className="counter-label" data-testid="counter-label">
+          {formatDuration(count)}
+        </div>
       </div>
       <div className="counter-controls">
         <button 

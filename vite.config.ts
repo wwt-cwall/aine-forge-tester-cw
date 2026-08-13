@@ -1,3 +1,4 @@
+// Changed by Forge v0.1.0
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 

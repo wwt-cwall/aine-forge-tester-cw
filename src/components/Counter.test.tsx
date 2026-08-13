@@ -1,3 +1,4 @@
+// Changed by Forge v0.1.0
 import { describe, it, expect } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import Counter from './Counter'
@@ -45,5 +46,20 @@ describe('Counter', () => {
     const incrementButton = screen.getByLabelText('Increment')
     fireEvent.click(incrementButton)
     expect(screen.getByTestId('counter-value')).toHaveTextContent('5')
+  })
+
+  it('displays formatted countdown label in m:ss format', () => {
+    render(<Counter initialValue={65} />)
+    expect(screen.getByTestId('counter-label')).toHaveTextContent('1:05')
+  })
+
+  it('updates formatted countdown label when count changes', () => {
+    render(<Counter />)
+    const incrementButton = screen.getByLabelText('Increment')
+    
+    expect(screen.getByTestId('counter-label')).toHaveTextContent('0:00')
+    
+    fireEvent.click(incrementButton)
+    expect(screen.getByTestId('counter-label')).toHaveTextContent('0:01')
   })
 })
