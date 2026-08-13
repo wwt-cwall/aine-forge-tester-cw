@@ -1,6 +1,10 @@
 // Changed by Forge v0.1.0
 /**
  * Converts seconds into a formatted duration string in m:ss format.
+ * 
+ * The seconds component is zero-padded to always display two digits,
+ * ensuring consistent formatting (e.g., "1:05" instead of "1:5").
+ * 
  * @param seconds - The number of seconds to format
  * @returns A string in the format "m:ss" (e.g., "1:05", "0:00", "60:00")
  */
