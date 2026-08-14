@@ -4,6 +4,6 @@ import { parseAge } from './parseAge'
 
 describe('parseAge', () => {
   it('returns 0 for non-numeric input', () => {
-    expect(Number.isNaN(parseAge('abc'))).toBe(true)
+    expect(parseAge('abc')).toBe(0)
   })
 })
