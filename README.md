@@ -1,3 +1,4 @@
+<!-- Changed by Forge v0.1.0 -->
 # Aine Forge Tester
 
 A TypeScript/React application designed as a testing ground for agentic coding tools.
@@ -54,6 +55,30 @@ npm run dev
 | `npm run test` | Run tests once |
 | `npm run test:watch` | Run tests in watch mode |
 | `npm run test:coverage` | Run tests with coverage report |
+
+## 🔧 Utility Helpers
+
+### slugify
+
+A utility function that converts strings into URL-friendly slugs by:
+- Converting to lowercase
+- Replacing spaces and special characters with hyphens
+- Removing leading and trailing hyphens
+- Collapsing consecutive hyphens into single hyphens
+
+**Function Signature:**
+```typescript
+function slugify(input: string): string
+```
+
+**Usage Example:**
+```typescript
+import { slugify } from './lib/slugify'
+
+slugify('Hello, World!')        // → 'hello-world'
+slugify('  Multiple   Spaces  ') // → 'multiple-spaces'
+slugify('Special!@#$%Characters') // → 'special-characters'
+```
 
 ## 📁 Project Structure
 
